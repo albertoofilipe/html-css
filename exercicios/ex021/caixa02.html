@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.23);
+        }
+
+        nav {
+            background-color: rgb(117, 117, 117);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.23);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: #161616;
+        }
+
+        main {
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.23);
+            border-radius: 10px 20px 30px 40px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            margin-bottom: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.23);
+        }
+
+        article > aside {
+            background-color: rgb(143, 143, 143);
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.23);
+        }
+
+        footer {
+            background-color: black;
+            color: #FFF;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.23);
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            background-color: white;
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+        <main>
+            <section id="assuntos">
+                <article>
+                    <h2>Esporte e Politicas</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum id illum laudantium quam ad consequatur sint! Voluptatem minima nulla quia laborum fugiat voluptate inventore architecto maxime! Perferendis consequatur eaque nemo!</p>
+                    <aside>
+                        <p>Artigo escrito por Alberto</p>
+                    </aside>
+                </article>
+            </section>
+            <section id="noticias">
+                <article>
+                    <h2>Notícias sobre Angola</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae neque, aliquam commodi eos a molestiae optio. Sint nobis ratione deleniti exercitationem facere quae sit dolore. Ducimus, obcaecati! Doloribus, accusantium expedita?</p>
+                    <aside>
+                        <p>Artigo escrito por Alberto</p>
+                    </aside>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido pelo <a href="#"> @AlbertoFilipe</a></p>
+        </footer>
+        <div id="bola"></div>
+</body>
+</html>

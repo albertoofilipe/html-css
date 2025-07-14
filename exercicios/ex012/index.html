@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos localmente</h1>
+    <p>Este vídeo esta hospedado no emu próprio servidor.</p>
+    <!-- <video src="media/meu-video.mp4" width="500" controls></video>-->
+
+    <video preload="metadata" loop controls width="560" poster="image/capa.png">
+        <source src="media/video.mp4" type="video/mp4">
+    </video>
+
+    <h1>Inserindo videos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=yApUBRQd96I&list=PPSV" frameborder="0" allow="accelerometer:autoplay"></iframe>
+</body>
+</html>
