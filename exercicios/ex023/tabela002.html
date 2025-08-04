@@ -12,17 +12,42 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(97, 96, 96);
             color:#FFF;
+        }
+
+        thead > tr >th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(97, 96, 96);
         }
 
         td, th {
             border: 2px solid #000;
             padding: 10px;
         }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(0, 255, 200);
+            color: #FFF;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(0, 102, 255);
+            color: #FFF;
+        }
+
         .num {
             text-align: right;
         }
@@ -31,9 +56,14 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>
+            População das unidades federativas
+        </caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -80,6 +110,22 @@
                 <td>São Paulo</td>
                 <td class="num">45 989 049</td>
             </tr>
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
             <tr>
                 <td>São Paulo</td>
                 <td class="num">45 989 049</td>
@@ -100,10 +146,60 @@
                 <td>São Paulo</td>
                 <td class="num">45 989 049</td>
             </tr>
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 989 049</td>
+            </tr>
         </tbody>
         <tfoot>
-            <th>total de habitantes</th>
-            <td class="num">222 450</td>
+            <tr>
+                <th scope="row">total de habitantes</th>
+                <td class="num">222 450</td>
+            </tr>
         </tfoot>
     </table>
 </body>
