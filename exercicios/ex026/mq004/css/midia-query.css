@@ -21,7 +21,7 @@ Grndes Telas: Acima de 1200px
     img#tablet { display: none; }
     img#print { display: block; }
     img#pc { display: none; }
-    img#tv { display: none; }
+    img#tv { display: none; }   
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
